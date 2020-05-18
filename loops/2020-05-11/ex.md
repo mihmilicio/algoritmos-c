@@ -1,0 +1,3 @@
+# Exercícios da aula
+
+1. O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos. Supondo que a percentagem do distribuidor seja de 28% (sobre o  custo de fábrica) e os impostos de 45% (aplicados ao custo de fábrica),  escrever um algoritmo   que leia o custo de fábrica de um carro comprado pelo distribuidor e escreva o custo final ao consumidor. O programa deve fazer esse cálculo para um conjunto de carros, sendo encerrado quando o custo informado for 0 (zero). Ao final, deve-se mostrar o número de carros avaliados, a soma total do custo final e a média do valor dos automóveis.
