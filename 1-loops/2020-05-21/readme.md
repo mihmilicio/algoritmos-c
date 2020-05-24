@@ -6,7 +6,8 @@
 2. Crie um programa que calcule e escreva a soma dos 50 primeiros termos da série:
 <a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\frac{1000}{1}&space;-&space;\frac{997}{2}&space;&plus;&space;\frac{994}{3}&space;-&space;\frac{991}{4}&space;&plus;&space;..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\frac{1000}{1}&space;-&space;\frac{997}{2}&space;&plus;&space;\frac{994}{3}&space;-&space;\frac{991}{4}&space;&plus;&space;..." title="\frac{1000}{1} - \frac{997}{2} + \frac{994}{3} - \frac{991}{4} + ..." /></a>
 
-3.
+3. Crie um programa que leia o valor de x e calcule e escreva o valor do seguinte somatório (até x¹/25):
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;S&space;=&space;\frac{x^{25}}{1}&space;&plus;&space;\frac{x^{24}}{2}&space;&plus;&space;\frac{x^{23}}{3}&space;&plus;&space;\frac{x^{22}}{4}&space;&plus;&space;..." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;S&space;=&space;\frac{x^{25}}{1}&space;&plus;&space;\frac{x^{24}}{2}&space;&plus;&space;\frac{x^{23}}{3}&space;&plus;&space;\frac{x^{22}}{4}&space;&plus;&space;..." title="S = \frac{x^{25}}{1} + \frac{x^{24}}{2} + \frac{x^{23}}{3} + \frac{x^{22}}{4} + ..." /></a>
 
 4. Elabore um programa que leia uma seqüência de números do teclado até que o usuário digite um número negativo. Sobre os números lidos, apresente:
     - O percentual de números pares
