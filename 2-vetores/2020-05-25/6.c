@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  int arraySize = 3;
+  int arraySize = 10;
   int soma = 0;
   int val[arraySize];
 
