@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  int arraySize = 3;
+  int arraySize = 15;
   float soma = 0;
   float notas[arraySize];
   float media;
