@@ -9,3 +9,5 @@
 4. Elabore um algoritmo que leia um vetor de 5 posições do teclado e um número `n` qualquer. Mostre na tela o índice dos elementos que são inferiores a `n`.
 
 5. Elabore um algoritmo que leia 5 números do teclado e os armazene em um vetor. Em seguida, leia um número `n` qualquer e apresente na tela a quantidade de vezes que o número `n` aparece no vetor.
+
+6. Crie um algoritmo que leia o vetor com 10 números e some apenas os elementos positivos e que estão nas posições pares. Apresente o valor da soma no final.
