@@ -5,3 +5,5 @@
 2. Faça um algoritmo que leia a nota de 15 alunos, calcule a média de todas as notas e apresente a menor e a maior nota.
 
 3. Faça um algoritmo que leia 10 números do teclado e os armazene em um vetor. Crie um segundo vetor de 10 posições que armazene o dobro de cada um dos números do primeiro vetor e apresente este segundo vetor.
+
+4. Elabore um algoritmo que leia um vetor de 5 posições do teclado e um número `n` qualquer. Mostre na tela o índice dos elementos que são inferiores a `n`.
