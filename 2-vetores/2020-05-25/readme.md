@@ -1,4 +1,4 @@
-# Lista de exercícios da aula
+# Lista 1 - vetores
 
 1. Construa um algoritmo que leia um vetor de 15 posições e calcule a média destes valores. Na sequência, apresente na tela os valores que são iguais ou superiores à média.
 
@@ -13,3 +13,5 @@
 6. Crie um algoritmo que leia o vetor com 10 números e some apenas os elementos positivos e que estão nas posições pares. Apresente o valor da soma no final.
 
 7. Faça um algoritmo que leia dois vetores de 5 elementos do teclado e verifique se eles são iguais ou não. Para serem iguais, todos os elementos dos dois vetores devem coincidir.
+
+8. Dados dois vetores A e B de tamanho igual a 10, crie um vetor C (do mesmo tamanho) cujos elementos são a soma de cada um dos elementos de A e B (os valores de A e B devem ser fornecidos durante a declaração dos mesmos, e não lidos do teclado).
