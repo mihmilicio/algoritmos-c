@@ -5,22 +5,18 @@
 
 int main()
 {
-  int tabuleiro[4][4] = {
-      {1, 8, 6, 3},
-      {4, 3, 5, 1},
-      {2, 2, 7, 8},
-      {6, 4, 7, 5}};
-  int descobertas[4][4] = {
-      {0, 0, 0, 0},
-      {0, 0, 0, 0},
-      {0, 0, 0, 0},
-      {0, 0, 0, 0}};
+  int tabuleiro[4][4];
+  int descobertas[4][4];
+  int pecasLimpas[16] = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8};
+  int pecas[16];
   int chosen1[2];
   int chosen2[2];
   int jogarNovamente = 0;
   int paresDescobertos = 0;
   int jogadas = 0;
   int validCoordinate = 0;
+
+  srand(time(0));
 
   void printBoard(int chosen1[2], int chosen2[2])
   {
@@ -98,10 +94,60 @@ int main()
     }
   }
 
+  void randomizeBoard()
+  {
+    int pecasAlocadas = 0;
+    for (int i = 0; i < 4; i++)
+    {
+      for (int j = 0; j < 4; j++)
+      {
+        int max = 16 - 1 - pecasAlocadas;
+        // rand() % (max_number + 1 - minimum_number) + minimum_number
+        int index = (rand() % (max - 0 + 1)) + 0;
+        tabuleiro[i][j] = pecas[index];
+
+        // move todas as peças não alocadas para baixo, e preenche com 0s
+        int lastIteration = 16 - 1 - pecasAlocadas;
+        for (int x = index; x <= lastIteration; x++)
+        {
+          if (x == lastIteration)
+          {
+            pecas[x] = 0;
+          }
+          else
+          {
+            pecas[x] = pecas[x + 1];
+          }
+        }
+
+        pecasAlocadas++;
+      }
+    }
+  }
+
+  void resetGame()
+  {
+    for (int i = 0; i < 4; i++)
+    {
+      for (int j = 0; j < 4; j++)
+      {
+        descobertas[i][j] = 0;
+      }
+    }
+
+    for (int i = 0; i < 16; i++)
+    {
+      pecas[i] = pecasLimpas[i];
+    }
+  }
+
   do
   {
     reset();
     printf("/**** JOGO DA MEMORIA ****/\n\n");
+
+    resetGame();
+    randomizeBoard();
 
     do
     {
@@ -211,14 +257,6 @@ int main()
     printf("Digite 1 para jogar novamente ou 0 para encerrar.\n");
     scanf("%d", &jogarNovamente);
     system("cls");
-
-    for (int i = 0; i < 4; i++)
-    {
-      for (int j = 0; j < 4; j++)
-      {
-        descobertas[i][j] = 0;
-      }
-    }
 
   } while (jogarNovamente == 1);
 
