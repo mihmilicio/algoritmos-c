@@ -20,10 +20,17 @@ int main()
 
   void printBoard(int chosen1[2], int chosen2[2])
   {
+    printf("  | 0  1  2  3\n");
+    printf("--+-----------\n");
     for (int i = 0; i < 4; i++)
     {
       for (int j = 0; j < 4; j++)
       {
+        if (j == 0)
+        {
+          printf("%d | ", i);
+        }
+
         int shouldShow = 0;
         if (chosen1)
         {
